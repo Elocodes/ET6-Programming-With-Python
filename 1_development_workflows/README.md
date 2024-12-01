@@ -49,17 +49,17 @@ Markdown locally on your own computer using Visual Studio Code (VSCode), the
 Command Line Interface (CLI) to automate your code's quality
 (formatting, linting and spell checking).
 
-- [ ] 🥚 **Folder Structures**: You can explain how files and folders are stored
+- [x] 🥚 **Folder Structures**: You can explain how files and folders are stored
       in your computer and can find, open or create files in your computer
       without using the Command Line Interface.
 - 🥚 **Command Line Interface (CLI)**: In a Unix shell you can ...
-  - [ ] Open a new terminal window
-  - [ ] Navigate up and down directories using `cd`
-  - [ ] List the contents of a directory using `ls`
-  - [ ] View the contents of a file using `cat`
-  - [ ] Create new files using `touch`
-  - [ ] Create new folders using `mkdir`
-- [ ] 🥚 **READMEs**: You can write a README file that describes the project you
+  - [x] Open a new terminal window
+  - [x] Navigate up and down directories using `cd`
+  - [x] List the contents of a directory using `ls`
+  - [x] View the contents of a file using `cat`
+  - [x] Create new files using `touch`
+  - [x] Create new folders using `mkdir`
+- [x] 🥚 **READMEs**: You can write a README file that describes the project you
       are working on, why it's helpful, and how someone can use it.
 - 🥚 **Formatting Markdown**: You can use Prettier to make sure all the code in
   your project is well-formatted:
@@ -71,7 +71,7 @@ Command Line Interface (CLI) to automate your code's quality
   - [ ] 🥚 **Spell Check**: You can use the Code Spell Checker VSCode extension
         to correct spelling mistakes in your Markdown documents while you are
         writing
-- [ ] 🥚 **File and Folder Naming Conventions**: You can use _snake_case_ to
+- [x] 🥚 **File and Folder Naming Conventions**: You can use _snake_case_ to
       name all files and folders in your project.
 - [ ] 🐣 **File Extensions**: You can identify all of the languages covered at
       HYF and give the correct file extension. You don't need to know the
@@ -87,22 +87,22 @@ how you can use Git to go back to previous versions of your project, and to work
 on different changes in parallel.
 
 - 🥚 **Git**: Using the CLI you can ...
-  - [ ] Initialize a new git repository with `git init`
-  - [ ] Stage changes using `git add <path>`
-  - [ ] Check what is staged with `git status`
-  - [ ] Commit changes using `git commit -m <message>`
-  - [ ] Display your repository's git history using `git log`
-  - [ ] Create a new branch using `git branch <branch-name>`
-  - [ ] Check out a branch using `git checkout <branch-name>`
-  - [ ] Create a new branch and check it out using
+  - [x] Initialize a new git repository with `git init`
+  - [x] Stage changes using `git add <path>`
+  - [x] Check what is staged with `git status`
+  - [x] Commit changes using `git commit -m <message>`
+  - [x] Display your repository's git history using `git log`
+  - [x] Create a new branch using `git branch <branch-name>`
+  - [x] Check out a branch using `git checkout <branch-name>`
+  - [x] Create a new branch and check it out using
         `git checkout -b <branch-name>`
-  - [ ] Merge changes from one branch to another using `git merge <branch-name>`
-  - [ ] Update current branch (your branch) from _main_ branch:
-    - [ ] Check out to _main_ branch using `git checkout main`
-    - [ ] Pull changes from remote repository using `git pull`
-    - [ ] Check out to your branch using `git checkout <branch-name>`
-    - [ ] Merge changes from _main_ branch to your branch using `git merge main`
-  - [ ] Merge changes from _main_ branch to current branch in one step using
+  - [x] Merge changes from one branch to another using `git merge <branch-name>`
+  - [x] Update current branch (your branch) from _main_ branch:
+    - [x] Check out to _main_ branch using `git checkout main`
+    - [x] Pull changes from remote repository using `git pull`
+    - [x] Check out to your branch using `git checkout <branch-name>`
+    - [x] Merge changes from _main_ branch to your branch using `git merge main`
+  - [x] Merge changes from _main_ branch to current branch in one step using
         `git pull origin main`
   - [ ] Return to a previous version of your project with `git log` and
         `git checkout <commit-hash>`
@@ -123,9 +123,9 @@ on different changes in parallel.
         history
   - [ ] Explain how the file tree in VSCode can show you which files have
         uncommitted changes
-- [ ] 🥚 **Atomic Commits**: You can save your development progress using small
+- [x] 🥚 **Atomic Commits**: You can save your development progress using small
       commits with clear and helpful message.
-- [ ] 🐣 **Feature Branches**: You can organize your development process using
+- [x] 🐣 **Feature Branches**: You can organize your development process using
       branches. You can create a new branch for each part of your project and
       merge those changes to `main` when they are finished.
 
@@ -138,38 +138,38 @@ to add more structure to your development process and to share your projects.
   - [ ] Explain why it's important to include a license for your code on GitHub
   - [ ] Choose a license for your projects that matches how you want others to
         use your code
-- [ ] 🥚 **Contributor Guidelines**: You can explain why contributor guidelines
+- [x] 🥚 **Contributor Guidelines**: You can explain why contributor guidelines
       are important for a public repository.
 - [ ] 🥚 **Code of Conduct**: You can explain why a code of conduct is important
       for a public repository.
-- [ ] 🥚 **GitHub SSH Key**: You can connect your computer to your GitHub
+- [x] 🥚 **GitHub SSH Key**: You can connect your computer to your GitHub
       account using an SSH key, clone using the SSH link, and push/pull using
       your SSH connection.
 - 🥚 **GitHub Repositories**: You can ...
-  - [ ] Create new repository on GitHub
-  - [ ] Write a description for your repository
-  - [ ] Turn on GitHub Pages
+  - [x] Create new repository on GitHub
+  - [x] Write a description for your repository
+  - [x] Turn on GitHub Pages
   - [ ] Configure your repository to block pushing to `main`
   - [ ] Configure your repository to block merging to `main` until Continuous
         Integration (CI) checks have passed
 - 🥚 **Git Remote/Local Connection**: You can ...
-  - [ ] Clone a remote repository to your computer using
+  - [x] Clone a remote repository to your computer using
         `git clone <remote-url>`
   - [ ] initialize a new repository locally and connect it to an empty remote
         repository
-  - [ ] `git push` command is used to upload local repository content to a
+  - [x] `git push` command is used to upload local repository content to a
         remote repository
-  - [ ] `git fetch` a primary command used to download contents from a remote
+  - [x] `git fetch` a primary command used to download contents from a remote
         repository
-  - [ ] `git pull` command downloads the changes directly and then applies those
+  - [x] `git pull` command downloads the changes directly and then applies those
         changes to the current working files
-  - [ ] `push` and `pull` changes between remote & local branches
-  - [ ] You can distinguish between `git fetch` and `git pull`
-- [ ] 🥚 **Pull Requests**: You can create a pull request between two branches
+  - [x] `push` and `pull` changes between remote & local branches
+  - [x] You can distinguish between `git fetch` and `git pull`
+- [x] 🥚 **Pull Requests**: You can create a pull request between two branches
       in your repository and merge changes without causing any conflicts.
 - [ ] 🥚 **PR templates**: You can use a PR template to add a checklist to all
       of your PRs so you are sure the code is great before merging to `main`.
-- [ ] 🥚 **Continuous Integration**: You can use GitHub Actions to check your
+- [x] 🥚 **Continuous Integration**: You can use GitHub Actions to check your
       code's quality before merging a pull request to the `main` branch.
 - [ ] 🐣 **Local/Remote Branching Workflow**: You can use a branching workflow
       that keeps mistakes away from the `main` branch and prevents conflicts

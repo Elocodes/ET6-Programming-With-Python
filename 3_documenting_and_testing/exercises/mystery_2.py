@@ -15,23 +15,35 @@ implementation - strategy b) because of ease
 
 # -- after documenting and testing
 
-def length_check(a: str) -> str:
+def length_check(a: str | list) -> str | list:
     """calculates the length of argument passed.
     
     parameter:
-    a: str
+    a: str or list
     
     Returns: length of argument a
 
     >>> length_check("christmas")
     9
 
-    >>> length_check()
+    >>> length_check([])
     None
 
+    >>> length_check("")
+    None
+
+    >>> length_check([3, 7, "cat"])
+    3
+
+    >>> length_check([[4], [8, 9, 23]])
+    2
+
     >>> length_check(50)
-    argument must be be str 
+    raises assertion error 
     """
+
+    # assert that argument is str or lis
+    assert isinstance(a, str | list)
 
     if len(a) == 0:
         return None

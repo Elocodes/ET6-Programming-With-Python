@@ -11,12 +11,12 @@ implementation - implement strategy b) below as it is simpler and more readable
 
 # -- after documenting and testing --
 
-def sum_of_numbers(a: int, b: int) -> int:
+def sum_of_numbers(a: int | float, b: int | float) -> int:
     """ sums the two arguments passed and returns their value.
     
     Parameters:
-    a: int - positive, negative or zero
-    b: int - positive, negative or zero
+    a: int or float- positive, negative or zero
+    b: int or float- positive, negative or zero
 
     Returns: a sum of the arguments 
     
@@ -32,7 +32,8 @@ def sum_of_numbers(a: int, b: int) -> int:
     >>> sum_of_numbers(-2, -3)
     -5
     """
+    # assert that argument passed is integer or float
+    assert isinstance(a, int | float)
+    assert isinstance(b, int | float)
 
-    if (a or b) is not int:
-        return "argument must be an int"
     return a + b

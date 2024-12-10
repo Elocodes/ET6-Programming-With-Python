@@ -22,11 +22,6 @@ class TestMystery3(unittest.TestCase):
         expected = 0
         self.assertEqual(actual, expected)
 
-    def test_2(self):
-        """it should raise an assertion error if argument is float"""
-        with self.assertRaises(AssertionError):
-            min_or_equal(78, 8.9)
-
-
-
-
+    def test_3(self):
+        """it should sum the floats"""
+        self.assertEqual(min_or_equal(-0.3, -0.3), -0.6)

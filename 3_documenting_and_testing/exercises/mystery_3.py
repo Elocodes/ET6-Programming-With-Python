@@ -15,7 +15,7 @@ implementation - I will implement a)
 #    else:
 #       return a + b
 
-def min_or_equal(a: int, b: int) -> int:
+def min_or_equal(a: int | float , b: int | float) -> int | float:
     """find the smallest number. sum if both are equal.
     
     parameters:
@@ -30,9 +30,16 @@ def min_or_equal(a: int, b: int) -> int:
     >>> min_or_equal(0, -38)
     -38
 
-    >>> min_or equal(2, 2)
+    >>> min_or_equal(2, 2)
     4
+
+    >>> min_or_equal(-2.33, -2.34)
+    -2.34
     """
+
+    # assert arguments are int
+    assert isinstance(a, int | float)
+    assert isinstance(b, int | float)
 
     if a != b:
         return min(a, b)

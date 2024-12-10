@@ -26,11 +26,11 @@ def length_check(a: str | list) -> str | list:
     >>> length_check("christmas")
     9
 
-    >>> length_check([])
-    None
+    >>> length_check([]) is None
+    True
 
-    >>> length_check("")
-    None
+    >>> length_check("") is None
+    True
 
     >>> length_check([3, 7, "cat"])
     3
@@ -39,7 +39,9 @@ def length_check(a: str | list) -> str | list:
     2
 
     >>> length_check(50)
-    raises assertion error 
+    Traceback (most recent call last):
+    ...
+    AssertionError
     """
 
     # assert that argument is str or lis

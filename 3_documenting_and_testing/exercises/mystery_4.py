@@ -10,7 +10,7 @@ def increment_list(a: int) -> int:
     """is length of b lower than a, then add c to b. increase c by 1.
     
     parameters:
-    a: int
+    a: int - positive or zero
     
     Returns: list b
     
@@ -18,7 +18,9 @@ def increment_list(a: int) -> int:
     []
 
     >>> increment_list(-1)
-    []
+    Traceback (most recent call last):
+    ...
+    AssertionError
 
     >>> increment_list(1)
     [0]
@@ -26,6 +28,10 @@ def increment_list(a: int) -> int:
     >>> increment_list(4)
     [0, 1, 2, 3]
     """
+    # assert argument is int
+    assert isinstance(a, int)
+    assert a >= 0
+
     b = []
 
     c = 0

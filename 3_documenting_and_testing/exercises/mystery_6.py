@@ -23,6 +23,10 @@ def append_to_c(a: int, b: int) -> int:
     >>> append_to_c(4, 11)
     [11, 12, 13, 14]
     """
+    # assert a and b are int
+    assert isinstance(a, int)
+    assert isinstance(b, int)
+    
     if a == 0:
         return []
 

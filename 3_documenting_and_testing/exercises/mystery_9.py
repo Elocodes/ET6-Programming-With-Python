@@ -8,7 +8,7 @@ implementation - rename function from mystery_9 to sort_values.
 """
 
 
-def sort_values(a: list | int) -> list | int :
+def sort_values(a: list ) -> list:
     """function sorts the list from smallest to biggest by
     swapping values.
     
@@ -25,7 +25,14 @@ def sort_values(a: list | int) -> list | int :
 
     >>> sort_values([])
     []
+
+    >>> sort_values(['j', 'a', 'k', 'c'])
+    ['a', 'c', 'j', 'k']
     """
+    # assert arg is list
+    assert isinstance(a, list)
+
+
     b = len(a)
     for c in range(b):
         for d in range(0, b - c - 1):

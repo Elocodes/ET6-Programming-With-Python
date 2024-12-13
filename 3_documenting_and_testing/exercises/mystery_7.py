@@ -16,12 +16,52 @@ def list_in_list(a: list, b):
     
     Returns: list c
     
-    >>> list_in_list([[9], [23, 8], ["apple"]], "apple")
-    [["apple"]]
+    >>> list_in_list([[9], [23, 8], ["apple", "grapes"]], "apple")
+    [['apple', 'grapes']]
 
     >>> list_in_list([[9], [8], [3]], 89)
     []
+
+    >>> list_in_list([[2], [4], [0]], 0)
+    [[0]]
+
+    >>> list_in_list([34, 8, 9], 8)
+    Traceback (most recent call last):
+    ...
+    AssertionError
+
+    >>> list_in_list([[34, 8, 9]], 8)
+    [[34, 8, 9]]
+
+    >>> list_in_list([(34, 8, 9)], 8)
+    [(34, 8, 9)]
+
+    >>> list_in_list(([34, 8, 9]), 8)
+    Traceback (most recent call last):
+    ...
+    AssertionError
+
+    >>> list_in_list([[-4, 8, 0], (67, 8)], 8)
+    [[-4, 8, 0], (67, 8)]
+
+    >>> list_in_list([[-4, 8, 0], (67)], 8)
+    Traceback (most recent call last):
+    ...
+    AssertionError
+
+    >>> list_in_list([[-4, 8, 0], (67)], 67)
+    Traceback (most recent call last):
+    ...
+    AssertionError
+
+
+    >>> list_in_list([[34, 8, 9], ("apple", "pie")], "pie")
+    [('apple', 'pie')]
     """
+    # assert a is a list and contains nested iterables - lists or tuples
+    assert isinstance(a, list)
+    for nested in a:
+        assert isinstance(nested, list | tuple )
     c = []
     for d in a:
         if b in d:

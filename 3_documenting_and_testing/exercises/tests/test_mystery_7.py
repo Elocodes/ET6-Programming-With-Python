@@ -5,11 +5,10 @@ from ..mystery_7 import list_in_list
 class TestMystery7(unittest.TestCase):
     """Test the list_in_list function"""
 
-    def list_in_list(arg, b):
-        """throw error if a is not a list of lists"""
-        assert isinstance(arg, list)
-        for sublists in arg:
-            assert isinstance(sublists, list)
+    def list_in_list(self):
+        """throw error if a is not a list containing other iterables - list or tuple"""
+        with self.assertRaises(AssertionError):
+            list_in_list([34, 8, 9], 8)
 
     def test_1(self):
         """it appends sublist to c if b is found in it"""

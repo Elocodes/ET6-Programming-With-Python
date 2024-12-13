@@ -5,11 +5,10 @@ from ..mystery_8 import loop_through_lists
 class TestMystery8(unittest.TestCase):
     """Test the loop_through_lists function"""
 
-    def loop_through_list(arg, b):
+    def loop_through_list(self):
         """throw error if a is not a list of lists"""
-        assert isinstance(arg, list)
-        for sublists in arg:
-            assert isinstance(sublists, list)
+        with self.assertRaises(AssertionError):
+            loop_through_lists([(67, 7), [7, 9]])
 
     def test_1(self):
         """it appends the first sublist if b is found in it"""

@@ -25,6 +25,11 @@ def loop_through_lists(a: list, b):
     >>> loop_through_lists([[2, 9, 8], [56, 3], [4, 9]], 10)
     []
     """
+    # asser that arg a is a list and its sublists are lists
+    assert isinstance(a, list)
+    for nested in a:
+        assert isinstance(nested, list)
+        
     c = []
     while a:
         if b in a[0]:

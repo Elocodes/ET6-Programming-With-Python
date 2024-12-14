@@ -6,46 +6,46 @@ the details become a habit.
 
 ## File Names
 
-- [ ] The file names match the function
-- [ ] Test file is named `/tests/test_file_name.py`
+- [x] The file names match the function
+- [x] Test file is named `/tests/test_file_name.py`
 
 ## Files
 
-- [ ] The file names match the function
-- [ ] Module header in each file
-- [ ] Module docstring in each file
+- [x] The file names match the function
+- [x] Module header in each file
+- [x] Module docstring in each file
 
 ## Unit Tests
 
-- [ ] The test class has a helpful name in PascalCase
-- [ ] The test class has a docstring
+- [x] The test class has a helpful name in PascalCase
+- [x] The test class has a docstring
 - Each unit test has
-  - [ ] A helpful name
-  - [ ] A clear docstring
-  - [ ] Only one assertion
-  - [ ] There is no logic in the unit test
-- [ ] All tests pass
-- [ ] (challenge) Tests for defensive assertions
+  - [x] A helpful name
+  - [x] A clear docstring
+  - [x] Only one assertion
+  - [x] There is no logic in the unit test
+- [x] All tests pass
+- [x] (challenge) Tests for defensive assertions
 - [ ] (challenge) Tests for many boundary cases
 
 ## Function Docstring
 
-- [ ] behavior description
-- [ ] parameter description
-- [ ] return value description
-- [ ] include any assumptions
-- [ ] include 3 or more (passing!) doctests
-- [ ] include 1-2 use cases (if necessary)
+- [x] behavior description
+- [x] parameter description
+- [x] return value description
+- [x] include any assumptions
+- [x] include 3 or more (passing!) doctests
+- [x] include 1-2 use cases (if necessary)
 
 ## Function Implementation
 
-- [ ] The code is auto-formatted
-- [ ] The code has no (reasonable) linting mistakes
-- [ ] Variables are named with snake_case
-- [ ] The function has a clear and helpful name
-- [ ] The file's name matches the function name
-- [ ] The code follows the strategy as simply as possible
-- [ ] Variable names are clear and helpful
-- [ ] Comments explain the strategy (if necessary)
-- [ ] There are type annotations
-- [ ] (challenge) The code includes defensive assertions
+- [x] The code is auto-formatted
+- [x] The code has no (reasonable) linting mistakes
+- [x] Variables are named with snake_case
+- [x] The function has a clear and helpful name
+- [x] The file's name matches the function name
+- [x] The code follows the strategy as simply as possible
+- [x] Variable names are clear and helpful
+- [x] Comments explain the strategy (if necessary)
+- [x] There are type annotations
+- [x] (challenge) The code includes defensive assertions

@@ -26,7 +26,7 @@ the details become a habit.
   - [x] There is no logic in the unit test
 - [x] All tests pass
 - [x] (challenge) Tests for defensive assertions
-- [ ] (challenge) Tests for many boundary cases
+- [x] (challenge) Tests for many boundary cases
 
 ## Function Docstring
 

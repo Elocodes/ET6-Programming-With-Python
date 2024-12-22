@@ -19,22 +19,29 @@ You will know you have understood this file when you can:
 """
 
 # you create a new variable by assign a value to it
-name = "D'athaniel"
+name = "D'athaniel"  # prediction: a variable "name" will be created and the value "D'athaniel" assined to it
 
 # you can assign a new value to a variable with the same syntax
-name = "Mittens"
+name = "Mittens"   # prediction: value of the variable name will change to mittens
 
 
 # variables can also be assigned the value stored in another variable
 # notice!  Variables only store one value at a time, the most recent one
-hand_thing = name
+hand_thing = name #prediction: a new variable "hand_thing" will be created, and assined the value mittens
 
 # reassigning the new variable does not change the value stored in the other
-hand_thing = "glove"
+hand_thing = "glove"  #prediction: a new value glove will be assigned to hand_thing
 # and vice-versa
-name = "Poalia"
+name = "Poalia" #prediction: name will be assigned a new value called "poalia"
 
 # using a variable without first assigning a value will throw an error
-hey = "toadstool"
+#hey = "toadstool" #predict that an error will occur because the value is empty
 
-print("end of script")
+#using a variable without first assigning a value will throw an error
+hey = "" #prediction: that an error will occur because the value is empty. our prediction was wrong. empty str 
+         #is considered a value
+
+
+print("checking out empty hey") #prediction: it will print and move to the next line
+
+hey =  # prediction: there will be an error because of the empty value
